@@ -1,0 +1,19 @@
+
+@for (post of posts; track post.id) {
+    <app-card [post]="post"/>
+    @defer (on viewport) {
+      <app-card  [post]="post" (loaded)="loaded($event)"/>
+    } @placeholder {
+      <div  class="d-flex align-items-center justify-content-center vh-100">
+        <div class="text-center p-4 bg-light rounded shadow">
+          Loading more posts...
+        </div>
+      </div>
+    }
+  }
+
+<!--  <div *ngIf="loading" class="d-flex align-items-center justify-content-center vh-100">
+    <div class="text-center p-4 bg-light rounded shadow">
+      Loading more posts...
+    </div>
+  </div>>-->

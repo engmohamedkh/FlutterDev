@@ -1,0 +1,5 @@
+<nav class="nav nav-pills  flex-row">
+    <a [class.active]="isActive('active')"routerLink="/hotposts" (click)="setActive('active')" class="flex-fill text-sm-center nav-link">Hot Posts</a>
+    <a [class.active]="isActive('longer')" routerLink="/newposts"(click)="setActive('longer')" class="flex-fill text-sm-center nav-link">New POsts</a>
+    <a [class.active]="isActive('link')" routerLink="/risingposts" (click)="setActive('link')" class="flex-fill text-sm-center nav-link">Rising Posts</a>
+  </nav>

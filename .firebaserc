@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "reddit-app-e8daf": {
+      "hosting": {
+        "postapp": [
+          "reddit-app-e8daf"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "reddit-app-e8daf"
+  }
+}
